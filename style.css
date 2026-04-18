@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    overflow-x: hidden;
+}
+
+.box {
+    width: 90%;
+    max-width: 320px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    text-align: center;
+}
+
+.box p {
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_usuario, .input_senha {
+    position: relative; 
+    margin-bottom: 20px; 
+    width: 100%;
+}
+
+.input_usuario i, .input_senha i {
+    position: absolute;
+    left: 5px; 
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 18px;
+}
+
+.input_usuario input, .input_senha input {
+    width: 100%;
+    padding: 10px 10px 10px 35px; 
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    color: white;
+    outline: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.input_usuario input:focus, .input_senha input:focus {
+    border-bottom: 1px solid #fff;
+}
+
+.input_usuario input::placeholder, .input_senha input::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+.lembrar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.lembrar div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.lembrar input[type="checkbox"] {
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    margin-top: 30px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.02);
+}
+
+@media (max-width: 350px) {
+    .box {
+        padding: 30px 20px;
+    }
+    .lembrar {
+        font-size: 11px;
+    }
+}
