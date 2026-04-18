@@ -1,8 +1,6 @@
 # 🪟 Glassmorphism Login Page
 
-![GitHub repo size](https://img.shields.io/github/repo-size/seu-usuario/nome-do-repositorio?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/seu-usuario/nome-do-repositorio?style=for-the-badge)
-![Static Badge](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
+
 
 Projeto de uma tela de login moderna com efeito de vidro (Glassmorphism), desenvolvida durante meus estudos de Front-End. O foco principal foi a criação de uma interface limpa, responsiva e otimizada para dispositivos móveis.
 
